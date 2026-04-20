@@ -6,9 +6,6 @@
 # A/B
 TARGET_IS_VAB := true
 
-# Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
@@ -94,3 +91,6 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/tundra/tundra-vendor.mk)
+
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
